@@ -1,9 +1,6 @@
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-image: url('buddha-statue.jpg');
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-color: black;
+  background-color: #050505;
 }
 
 h1 {
@@ -14,31 +11,57 @@ h1 {
   text-align: center;
 }
 
+.quote-img-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .quote-box {
+  align-items: center;
   background-color: #FEFBCD;
   border: 10px solid #FDEE0E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+  min-height: 255px;
   padding: 20px;
+  width: 700px;
+}
+
+img {
+  height: 300px;
 }
 
 .btns-container {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .quote-btn {
   background-color: #FEFBCD;
+  font-size: 16px;
+  margin: 20px;
+  padding: 7.5px 20px;
 }
 
 .quote {
-  font-size: 30px;
+  font-size: 24px;
+  text-align: center;
 }
 
 .source {
   font-size: 20px;
 }
 
+.fa {
+  margin-right: 7.5px;
+}
+
 .footer-p {
   color: #FDEE0E;
-  margin: 20px;
+  margin: 190px 20px 0 20px;
+  text-align: center;
 }
 
 a {
@@ -48,4 +71,42 @@ a {
 a:hover,
 a:visited {
   color: #CB6501;
+}
+
+@media screen and (max-width: 1300px) {
+  img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    display: none;
+  }
+
+  .quote-box {
+    min-height: 310px;
+  }
+
+  .footer-p {
+    margin-top: 125px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quote-box {
+    min-height: 380px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  .source {
+    font-size: 16px;
+  }
+
+  .footer-p {
+    margin-top: 60px;
+  }
 }

@@ -1,0 +1,51 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-image: url('buddha-statue.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-color: black;
+}
+
+h1 {
+  color: #FDEE0E;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quote-box {
+  background-color: #FEFBCD;
+  border: 10px solid #FDEE0E;
+  padding: 20px;
+}
+
+.btns-container {
+
+}
+
+.quote-btn {
+  background-color: #FEFBCD;
+}
+
+.quote {
+  font-size: 30px;
+}
+
+.source {
+  font-size: 20px;
+}
+
+.footer-p {
+  color: #FDEE0E;
+  margin: 20px;
+}
+
+a {
+  color: #FEFBCD;
+}
+
+a:hover,
+a:visited {
+  color: #CB6501;
+}
